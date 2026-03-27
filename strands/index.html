@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://chopratejas.github.io/headroom/LIMITATIONS/">
+        <link rel="canonical" href="https://chopratejas.github.io/headroom/strands/">
       
       
-        <link rel="prev" href="../LATENCY_BENCHMARKS/">
+        <link rel="prev" href="../agno/">
       
       
-        <link rel="next" href="../api/">
+        <link rel="next" href="../mcp/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Limitations - Headroom</title>
+        <title>Strands - Headroom</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#headroom-limitations-known-behavior" class="md-skip">
+        <a href="#strands-integration" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Limitations
+              Strands
             
           </span>
         </div>
@@ -289,10 +289,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../integration-guide/" class="md-tabs__link">
           
   
@@ -333,12 +335,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../benchmarks/" class="md-tabs__link">
           
   
@@ -905,8 +905,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -924,21 +926,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -956,7 +959,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1055,10 +1058,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../strands/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strands
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1074,6 +1104,142 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration Patterns
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-model-wrapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Model Wrapping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-hook-provider-tool-output-compression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Hook Provider (Tool Output Compression)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-both-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Both Together
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structured-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structured Output
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metrics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-providers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Providers
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1301,10 +1467,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1318,22 +1482,21 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -1351,7 +1514,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1422,37 +1585,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Limitations
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../LIMITATIONS/" class="md-nav__link">
         
   
   
@@ -1468,186 +1604,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#when-headroom-helps-and-when-it-doesnt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        When Headroom Helps (and When It Doesn't)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-compression" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Code Compression
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#json-compression-constraints" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        JSON Compression Constraints
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="JSON Compression Constraints">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-gets-compressed" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What gets compressed
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#what-passes-through" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What passes through
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#edge-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Edge cases
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adaptive-k-how-item-retention-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adaptive K: How Item Retention Works
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#text-compression-llmlingua" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Text Compression (LLMLingua)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#error-handling" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error Handling
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#toin-cold-start" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TOIN Cold Start
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cachealigner-behavior" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CacheAligner Behavior
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#provider-interactions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Provider Interactions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#performance-characteristics" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Performance Characteristics
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-tuning" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration Tuning
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1993,10 +1949,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#when-headroom-helps-and-when-it-doesnt" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        When Headroom Helps (and When It Doesn't)
+        Installation
       
     </span>
   </a>
@@ -2004,10 +1960,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#code-compression" class="md-nav__link">
+  <a href="#quick-start" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Code Compression
+        Quick Start
       
     </span>
   </a>
@@ -2015,22 +1971,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#json-compression-constraints" class="md-nav__link">
+  <a href="#integration-patterns" class="md-nav__link">
     <span class="md-ellipsis">
       
-        JSON Compression Constraints
+        Integration Patterns
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="JSON Compression Constraints">
+    <nav class="md-nav" aria-label="Integration Patterns">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#what-gets-compressed" class="md-nav__link">
+  <a href="#1-model-wrapping" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What gets compressed
+        1. Model Wrapping
       
     </span>
   </a>
@@ -2038,10 +1994,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#what-passes-through" class="md-nav__link">
+  <a href="#2-hook-provider-tool-output-compression" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What passes through
+        2. Hook Provider (Tool Output Compression)
       
     </span>
   </a>
@@ -2049,10 +2005,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#edge-cases" class="md-nav__link">
+  <a href="#3-both-together" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Edge cases
+        3. Both Together
       
     </span>
   </a>
@@ -2065,10 +2021,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adaptive-k-how-item-retention-works" class="md-nav__link">
+  <a href="#structured-output" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adaptive K: How Item Retention Works
+        Structured Output
       
     </span>
   </a>
@@ -2076,10 +2032,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#text-compression-llmlingua" class="md-nav__link">
+  <a href="#metrics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Text Compression (LLMLingua)
+        Metrics
       
     </span>
   </a>
@@ -2087,10 +2043,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#error-handling" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error Handling
+        How It Works
       
     </span>
   </a>
@@ -2098,54 +2054,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#toin-cold-start" class="md-nav__link">
+  <a href="#supported-providers" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TOIN Cold Start
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cachealigner-behavior" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CacheAligner Behavior
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#provider-interactions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Provider Interactions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#performance-characteristics" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Performance Characteristics
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-tuning" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration Tuning
+        Supported Providers
       
     </span>
   </a>
@@ -2172,232 +2084,150 @@
   
 
 
-<h1 id="headroom-limitations-known-behavior">Headroom Limitations &amp; Known Behavior<a class="headerlink" href="#headroom-limitations-known-behavior" title="Permanent link">&para;</a></h1>
-<p>Honest documentation of when Headroom helps, when it doesn't, and what to watch out for.</p>
-<h2 id="when-headroom-helps-and-when-it-doesnt">When Headroom Helps (and When It Doesn't)<a class="headerlink" href="#when-headroom-helps-and-when-it-doesnt" title="Permanent link">&para;</a></h2>
+<h1 id="strands-integration">Strands Integration<a class="headerlink" href="#strands-integration" title="Permanent link">&para;</a></h1>
+<p>Headroom integrates with <a href="https://github.com/strands-agents/sdk-python">Strands Agents</a> to provide automatic context optimization. Two integration patterns: wrap the model, or hook into tool calls.</p>
+<hr />
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>headroom-ai<span class="w"> </span>strands-agents
+</span></code></pre></div>
+<hr />
+<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">strands</span><span class="w"> </span><span class="kn">import</span> <span class="n">Agent</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">strands.models.bedrock</span><span class="w"> </span><span class="kn">import</span> <span class="n">BedrockModel</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">headroom.integrations.strands</span><span class="w"> </span><span class="kn">import</span> <span class="n">HeadroomStrandsModel</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># Wrap your model</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">model</span> <span class="o">=</span> <span class="n">BedrockModel</span><span class="p">(</span><span class="n">model_id</span><span class="o">=</span><span class="s2">&quot;us.anthropic.claude-sonnet-4-20250514-v1:0&quot;</span><span class="p">)</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">optimized</span> <span class="o">=</span> <span class="n">HeadroomStrandsModel</span><span class="p">(</span><span class="n">wrapped_model</span><span class="o">=</span><span class="n">model</span><span class="p">)</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1"># Create agent as usual</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">optimized</span><span class="p">)</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">response</span> <span class="o">=</span> <span class="n">agent</span><span class="p">(</span><span class="s2">&quot;Investigate the production incident&quot;</span><span class="p">)</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="c1"># Check savings</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Tokens saved: </span><span class="si">{</span><span class="n">optimized</span><span class="o">.</span><span class="n">total_tokens_saved</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Every API call the agent makes — including tool result round-trips — gets compressed automatically.</p>
+<hr />
+<h2 id="integration-patterns">Integration Patterns<a class="headerlink" href="#integration-patterns" title="Permanent link">&para;</a></h2>
+<h3 id="1-model-wrapping">1. Model Wrapping<a class="headerlink" href="#1-model-wrapping" title="Permanent link">&para;</a></h3>
+<p>Wraps the Strands <code>Model</code> interface. Every call to <code>stream()</code> compresses the messages before they hit the provider.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">strands.models.bedrock</span><span class="w"> </span><span class="kn">import</span> <span class="n">BedrockModel</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">headroom.integrations.strands</span><span class="w"> </span><span class="kn">import</span> <span class="n">HeadroomStrandsModel</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">model</span> <span class="o">=</span> <span class="n">BedrockModel</span><span class="p">(</span><span class="n">model_id</span><span class="o">=</span><span class="s2">&quot;us.anthropic.claude-sonnet-4-20250514-v1:0&quot;</span><span class="p">)</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">optimized</span> <span class="o">=</span> <span class="n">HeadroomStrandsModel</span><span class="p">(</span><span class="n">wrapped_model</span><span class="o">=</span><span class="n">model</span><span class="p">)</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Streaming works identically</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">optimized</span><span class="p">)</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="n">response</span> <span class="o">=</span> <span class="n">agent</span><span class="p">(</span><span class="s2">&quot;Analyze these logs&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>With custom config:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">headroom</span><span class="w"> </span><span class="kn">import</span> <span class="n">HeadroomConfig</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">config</span> <span class="o">=</span> <span class="n">HeadroomConfig</span><span class="p">()</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">optimized</span> <span class="o">=</span> <span class="n">HeadroomStrandsModel</span><span class="p">(</span><span class="n">wrapped_model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="2-hook-provider-tool-output-compression">2. Hook Provider (Tool Output Compression)<a class="headerlink" href="#2-hook-provider-tool-output-compression" title="Permanent link">&para;</a></h3>
+<p>Compresses tool call results via Strands' hook system. Uses SmartCrusher on JSON arrays returned by tools.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">strands</span><span class="w"> </span><span class="kn">import</span> <span class="n">Agent</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">strands.models.bedrock</span><span class="w"> </span><span class="kn">import</span> <span class="n">BedrockModel</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">headroom.integrations.strands</span><span class="w"> </span><span class="kn">import</span> <span class="n">HeadroomHookProvider</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">model</span> <span class="o">=</span> <span class="n">BedrockModel</span><span class="p">(</span><span class="n">model_id</span><span class="o">=</span><span class="s2">&quot;us.anthropic.claude-sonnet-4-20250514-v1:0&quot;</span><span class="p">)</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">hooks</span> <span class="o">=</span> <span class="n">HeadroomHookProvider</span><span class="p">(</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="n">compress_tool_outputs</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="n">min_tokens_to_compress</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="n">preserve_errors</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="p">)</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="n">hooks</span><span class="o">=</span><span class="p">[</span><span class="n">hooks</span><span class="p">])</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="n">response</span> <span class="o">=</span> <span class="n">agent</span><span class="p">(</span><span class="s2">&quot;Search the database for recent failures&quot;</span><span class="p">)</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="c1"># Check tool compression savings</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Tokens saved by hooks: </span><span class="si">{</span><span class="n">hooks</span><span class="o">.</span><span class="n">total_tokens_saved</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The hook preserves:</p>
+<ul>
+<li>Error items (error indicators, exceptions)</li>
+<li>Anomalous values (statistical outliers)</li>
+<li>Items matching the user's query context</li>
+<li>First/last items for boundary context</li>
+</ul>
+<h3 id="3-both-together">3. Both Together<a class="headerlink" href="#3-both-together" title="Permanent link">&para;</a></h3>
+<p>Model wrapping compresses conversation history. Hooks compress individual tool results. Use both for maximum savings.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">headroom.integrations.strands</span><span class="w"> </span><span class="kn">import</span> <span class="n">HeadroomStrandsModel</span><span class="p">,</span> <span class="n">HeadroomHookProvider</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">optimized</span> <span class="o">=</span> <span class="n">HeadroomStrandsModel</span><span class="p">(</span><span class="n">wrapped_model</span><span class="o">=</span><span class="n">model</span><span class="p">)</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">hooks</span> <span class="o">=</span> <span class="n">HeadroomHookProvider</span><span class="p">(</span><span class="n">compress_tool_outputs</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">optimized</span><span class="p">,</span> <span class="n">hooks</span><span class="o">=</span><span class="p">[</span><span class="n">hooks</span><span class="p">])</span>
+</span></code></pre></div>
+<hr />
+<h2 id="structured-output">Structured Output<a class="headerlink" href="#structured-output" title="Permanent link">&para;</a></h2>
+<p>HeadroomStrandsModel supports Strands' structured output feature:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">Analysis</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="n">severity</span><span class="p">:</span> <span class="nb">str</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="n">root_cause</span><span class="p">:</span> <span class="nb">str</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="n">recommendation</span><span class="p">:</span> <span class="nb">str</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">result</span> <span class="o">=</span> <span class="n">optimized</span><span class="o">.</span><span class="n">structured_output</span><span class="p">(</span><span class="n">Analysis</span><span class="p">,</span> <span class="n">messages</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="metrics">Metrics<a class="headerlink" href="#metrics" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Per-request metrics</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">optimized</span><span class="o">.</span><span class="n">metrics_history</span><span class="p">:</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">m</span><span class="o">.</span><span class="n">tokens_before</span><span class="si">}</span><span class="s2"> → </span><span class="si">{</span><span class="n">m</span><span class="o">.</span><span class="n">tokens_after</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">m</span><span class="o">.</span><span class="n">tokens_saved</span><span class="si">}</span><span class="s2"> saved)&quot;</span><span class="p">)</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># Running total</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total saved: </span><span class="si">{</span><span class="n">optimized</span><span class="o">.</span><span class="n">total_tokens_saved</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="how-it-works">How It Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Agent decides to call tool
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    │
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    ▼
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>Tool executes, returns result
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    │
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    ▼
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>HeadroomHookProvider (optional)
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>    compresses tool result JSON
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>    │
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    ▼
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>Agent builds next API request
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>    │
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>    ▼
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>HeadroomStrandsModel.stream()
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>    compresses full message list
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>    │
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>    ▼
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>Provider API (Bedrock, etc.)
+</span></code></pre></div>
+<p>The model wrapper uses Headroom's full pipeline (CacheAligner → ContentRouter → IntelligentContext). The hook provider uses SmartCrusher directly for fast JSON compression of individual tool results.</p>
+<hr />
+<h2 id="supported-providers">Supported Providers<a class="headerlink" href="#supported-providers" title="Permanent link">&para;</a></h2>
+<p>HeadroomStrandsModel auto-detects the provider from the wrapped model:</p>
 <table>
 <thead>
 <tr>
-<th>Content Type</th>
-<th>Compression</th>
-<th>Latency Impact</th>
-<th>Best For</th>
+<th>Strands Model</th>
+<th>Provider Detected</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>JSON: Arrays of dicts</strong> (search results, API responses, DB rows)</td>
-<td>86-100%</td>
-<td>Net latency win on Sonnet/Opus</td>
-<td>Primary use case — always use</td>
+<td><code>BedrockModel</code></td>
+<td>Anthropic (via Bedrock)</td>
 </tr>
 <tr>
-<td><strong>JSON: Arrays of strings</strong> (file paths, log lines, tags)</td>
-<td>60-90%</td>
-<td>Net latency win</td>
-<td>New — works with all string arrays</td>
+<td><code>OllamaModel</code></td>
+<td>OpenAI-compatible</td>
 </tr>
 <tr>
-<td><strong>JSON: Arrays of numbers</strong> (metrics, time series)</td>
-<td>70-85%</td>
-<td>Net latency win</td>
-<td>New — includes statistical summary</td>
-</tr>
-<tr>
-<td><strong>JSON: Mixed-type arrays</strong></td>
-<td>50-70%</td>
-<td>Net latency win</td>
-<td>New — groups by type, compresses each</td>
-</tr>
-<tr>
-<td><strong>Structured logs</strong> (as JSON)</td>
-<td>82-95%</td>
-<td>Net latency win</td>
-<td>Log entries in tool outputs</td>
-</tr>
-<tr>
-<td><strong>Agentic conversations</strong> (25-50 turns)</td>
-<td>56-81%</td>
-<td>Break-even to net win</td>
-<td>Multi-tool agent sessions</td>
-</tr>
-<tr>
-<td><strong>Plain text</strong> (documentation, articles)</td>
-<td>43-46%</td>
-<td>Adds latency (cost savings only)</td>
-<td>Cost optimization, not speed</td>
-</tr>
-<tr>
-<td><strong>Code</strong></td>
-<td>Passthrough</td>
-<td>Minimal overhead</td>
-<td>See <a href="#code-compression">Code Compression</a></td>
-</tr>
-<tr>
-<td><strong>RAG document contexts</strong></td>
-<td>Passthrough</td>
-<td>Minimal overhead</td>
-<td>Not compressed (plain text in user messages)</td>
-</tr>
-</tbody>
-</table>
-<p>See <a href="../LATENCY_BENCHMARKS/">LATENCY_BENCHMARKS.md</a> for full data with per-scenario timing.</p>
-<h2 id="code-compression">Code Compression<a class="headerlink" href="#code-compression" title="Permanent link">&para;</a></h2>
-<p>Headroom includes an AST-aware CodeCompressor (tree-sitter, 8 languages) but it's gated behind safety protections that prevent it from firing in most real-world scenarios. This is intentional.</p>
-<p><strong>Why code mostly passes through:</strong></p>
-<ol>
-<li><strong>Word count gate</strong>: Content under 50 words is silently skipped</li>
-<li><strong>Recent code protection</strong> (<code>protect_recent_code=4</code>): Code in the last 4 messages is never compressed. In typical tool-call patterns, the tool result is always "recent"</li>
-<li><strong>Analysis intent protection</strong> (<code>protect_analysis_context=True</code>): If the most recent user message contains keywords like "analyze", "review", "explain", "fix", "debug", "optimize", "error", "bug" — ALL code in the conversation is protected</li>
-</ol>
-<p><strong>Why this is the right default</strong>: Code is almost always fetched because the user wants to work with it. Compressing function bodies would remove exactly what they need. LLMs like Claude are excellent at navigating large code files without compression.</p>
-<p><strong>Where code savings come from</strong>: The IntelligentContextManager drops old code messages that are no longer relevant (scoring-based), which is a better strategy than stripping function bodies from active code.</p>
-<p><strong>Override</strong>: Set <code>protect_analysis_context=False</code> in <code>ContentRouterConfig</code> for aggressive code compression. Requires <code>headroom-ai[code]</code> for tree-sitter.</p>
-<h2 id="json-compression-constraints">JSON Compression Constraints<a class="headerlink" href="#json-compression-constraints" title="Permanent link">&para;</a></h2>
-<h3 id="what-gets-compressed">What gets compressed<a class="headerlink" href="#what-gets-compressed" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Arrays of <strong>dicts</strong>: Full statistical analysis with adaptive K (Kneedle algorithm)</li>
-<li>Arrays of <strong>strings</strong>: Dedup + adaptive sampling + error preservation</li>
-<li>Arrays of <strong>numbers</strong>: Statistical summary + outlier/change-point preservation</li>
-<li><strong>Mixed-type</strong> arrays: Grouped by type, each group compressed independently</li>
-<li><strong>Nested</strong> objects: Recursed into, arrays within are compressed (up to depth 5)</li>
-</ul>
-<h3 id="what-passes-through">What passes through<a class="headerlink" href="#what-passes-through" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Arrays below 5 items (<code>min_items_to_analyze</code>)</li>
-<li>Content below 200 tokens (<code>min_tokens_to_crush</code>)</li>
-<li>Bool-only arrays (not useful to compress)</li>
-<li>JSON objects without array values</li>
-<li>Malformed JSON (silently passes through, no error)</li>
-<li>Non-JSON content (handled by other pipeline stages)</li>
-</ul>
-<h3 id="edge-cases">Edge cases<a class="headerlink" href="#edge-cases" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>NaN/Infinity</strong> in numeric fields: Filtered out before statistics are computed</li>
-<li><strong>Nesting depth &gt; 5</strong>: Inner arrays not examined for compression</li>
-<li><strong>Mixed-type arrays with small groups</strong>: Groups below <code>min_items_to_analyze</code> are kept as-is</li>
-</ul>
-<h2 id="adaptive-k-how-item-retention-works">Adaptive K: How Item Retention Works<a class="headerlink" href="#adaptive-k-how-item-retention-works" title="Permanent link">&para;</a></h2>
-<p>SmartCrusher doesn't use fixed K values. It uses information-theoretic sizing:</p>
-<ol>
-<li><strong>Kneedle algorithm</strong> on bigram coverage curves finds the point where adding more items stops providing new information</li>
-<li><strong>SimHash</strong> fingerprinting detects near-duplicate items</li>
-<li><strong>zlib validation</strong> ensures the subset captures the full set's diversity</li>
-<li>The resulting K is split: 30% from array start, 15% from end, 55% for importance-scored items</li>
-</ol>
-<p><strong>Safety guarantees (additive, never dropped):</strong>
-- Error items (containing "error", "exception", "failed", "critical", etc.) — across ALL array types
-- Numeric anomalies (&gt; 2σ from mean)
-- String length anomalies (&gt; 2σ from mean length)
-- Change points (sudden shifts in running values)</p>
-<p>These are kept even if they exceed the K budget.</p>
-<h2 id="text-compression-llmlingua">Text Compression (LLMLingua)<a class="headerlink" href="#text-compression-llmlingua" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Requires</strong>: <code>headroom-ai[llmlingua]</code> — downloads ~2GB model, needs ~1GB RAM</li>
-<li><strong>First call</strong>: 10-30s model load latency (cached globally after)</li>
-<li><strong>Sequence length</strong>: Content chunked at 512 tokens (model limit)</li>
-<li><strong>Content &lt; 100 tokens</strong>: Skipped</li>
-<li><strong>Latency</strong>: Adds overhead that doesn't break even on fast models (GPT-4o Mini, Sonnet). Use for <strong>cost savings</strong>, not speed</li>
-<li><strong>Thread safety</strong>: Single global model instance with lock — sequential access under concurrency</li>
-</ul>
-<h2 id="error-handling">Error Handling<a class="headerlink" href="#error-handling" title="Permanent link">&para;</a></h2>
-<p>All compressors follow the same principle: <strong>fail gracefully, return original content unchanged</strong>.</p>
-<ul>
-<li>Invalid JSON → passthrough (no error raised)</li>
-<li>AST parse failure in CodeCompressor → falls back to original or LLMLingua</li>
-<li>Compression makes output larger → original returned</li>
-<li>Missing optional dependencies (tree-sitter, LLMLingua) → passthrough with warning log</li>
-<li><strong>One exception</strong>: LLMLingua out-of-memory during model loading raises <code>RuntimeError</code></li>
-</ul>
-<p>Errors are logged at WARNING level and never propagated to callers.</p>
-<h2 id="toin-cold-start">TOIN Cold Start<a class="headerlink" href="#toin-cold-start" title="Permanent link">&para;</a></h2>
-<p>The Tool Output Intelligence Network (TOIN) learns compression patterns from usage. For new tool types:</p>
-<ul>
-<li>No learned patterns exist → falls back to statistical heuristics</li>
-<li>Confidence below <code>toin_confidence_threshold</code> (default 0.3) → TOIN hints ignored</li>
-<li>Patterns build up over time as tools are used repeatedly</li>
-<li>Cross-session learning requires persistence (<code>TelemetryConfig.storage_path</code>)</li>
-</ul>
-<h2 id="cachealigner-behavior">CacheAligner Behavior<a class="headerlink" href="#cachealigner-behavior" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Only processes <strong>system messages</strong> for dynamic content extraction</li>
-<li>Dynamic content in user/assistant/tool messages is not extracted</li>
-<li>May add small markers (<code>[Dynamic Context]</code> separator) that slightly increase token count</li>
-<li>Whitespace normalization may affect content with significant indentation (code blocks, ASCII art)</li>
-</ul>
-<h2 id="provider-interactions">Provider Interactions<a class="headerlink" href="#provider-interactions" title="Permanent link">&para;</a></h2>
-<ul>
-<li>CacheAligner is designed to maximize Anthropic/OpenAI prefix cache hit rates</li>
-<li>Token counting uses model-specific tokenizers (tiktoken for OpenAI, calibrated estimation for Anthropic)</li>
-<li>Compression works with all providers — no provider-specific limitations</li>
-<li>Compressed content is valid JSON — downstream tools and parsers work unchanged</li>
-</ul>
-<h2 id="performance-characteristics">Performance Characteristics<a class="headerlink" href="#performance-characteristics" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>ContentRouter</strong> accounts for 91-98% of pipeline cost — it does the actual compression work</li>
-<li><strong>CacheAligner</strong> and <strong>RollingWindow</strong> are sub-millisecond</li>
-<li>Scaling is roughly <strong>linear</strong> with input size</li>
-<li>Full benchmark data: <a href="../LATENCY_BENCHMARKS/">LATENCY_BENCHMARKS.md</a></li>
-</ul>
-<h2 id="configuration-tuning">Configuration Tuning<a class="headerlink" href="#configuration-tuning" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Effect</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>min_items_to_analyze</code></td>
-<td>5</td>
-<td>Arrays below this pass through</td>
-</tr>
-<tr>
-<td><code>min_tokens_to_crush</code></td>
-<td>200</td>
-<td>Content below this passes through</td>
-</tr>
-<tr>
-<td><code>max_items_after_crush</code></td>
-<td>15</td>
-<td>Upper bound on retained items</td>
-</tr>
-<tr>
-<td><code>variance_threshold</code></td>
-<td>2.0</td>
-<td>Std devs for anomaly detection (lower = more preserved)</td>
-</tr>
-<tr>
-<td><code>first_fraction</code></td>
-<td>0.3</td>
-<td>Fraction of K allocated to array start</td>
-</tr>
-<tr>
-<td><code>last_fraction</code></td>
-<td>0.15</td>
-<td>Fraction of K allocated to array end</td>
-</tr>
-<tr>
-<td><code>protect_analysis_context</code></td>
-<td>True</td>
-<td>Protect code when user asks about it</td>
-</tr>
-<tr>
-<td><code>protect_recent_code</code></td>
-<td>4</td>
-<td>Messages from end to protect code</td>
-</tr>
-<tr>
-<td><code>skip_user_messages</code></td>
-<td>True</td>
-<td>Never compress user messages</td>
-</tr>
-<tr>
-<td><code>toin_confidence_threshold</code></td>
-<td>0.3</td>
-<td>Minimum TOIN confidence to apply hints</td>
+<td>Custom <code>Model</code></td>
+<td>Falls back to estimation</td>
 </tr>
 </tbody>
 </table>
