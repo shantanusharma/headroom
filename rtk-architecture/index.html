@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://chopratejas.github.io/headroom/spec/013-disaster-recovery/">
+        <link rel="canonical" href="https://chopratejas.github.io/headroom/rtk-architecture/">
       
       
       
@@ -18,19 +18,19 @@
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>013. Disaster Recovery - Headroom</title>
+        <title>RTK architecture — why wrap-CLI only - Headroom</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,9 +49,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#013-disaster-recovery" class="md-skip">
+        <a href="#rtk-architecture-why-wrap-cli-only" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Headroom" class="md-header__button md-logo" aria-label="Headroom" data-md-component="logo">
+    <a href=".." title="Headroom" class="md-header__button md-logo" aria-label="Headroom" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 18.54 7.37-5.74L21 14.07l-9 7-9-7 1.62-1.26zM12 16 3 9l9-7 9 7zm0-11.47L6.26 9 12 13.47 17.74 9z"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              013. Disaster Recovery
+              RTK architecture — why wrap-CLI only
             
           </span>
         </div>
@@ -224,7 +224,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../index.md" class="md-tabs__link">
+      <a href="../index.md" class="md-tabs__link">
         
   
   
@@ -245,7 +245,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../quickstart.md" class="md-tabs__link">
+        <a href="../quickstart.md" class="md-tabs__link">
           
   
   
@@ -267,7 +267,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../proxy.md" class="md-tabs__link">
+        <a href="../proxy.md" class="md-tabs__link">
           
   
   
@@ -289,7 +289,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../integration-guide.md" class="md-tabs__link">
+        <a href="../integration-guide.md" class="md-tabs__link">
           
   
   
@@ -311,7 +311,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../ARCHITECTURE.md" class="md-tabs__link">
+        <a href="../ARCHITECTURE.md" class="md-tabs__link">
           
   
   
@@ -333,7 +333,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../benchmarks.md" class="md-tabs__link">
+        <a href="../benchmarks.md" class="md-tabs__link">
           
   
   
@@ -355,7 +355,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../cli.md" class="md-tabs__link">
+        <a href="../cli.md" class="md-tabs__link">
           
   
   
@@ -377,7 +377,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../macos-deployment.md" class="md-tabs__link">
+        <a href="../macos-deployment.md" class="md-tabs__link">
           
   
   
@@ -419,7 +419,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Headroom" class="md-nav__button md-logo" aria-label="Headroom" data-md-component="logo">
+    <a href=".." title="Headroom" class="md-nav__button md-logo" aria-label="Headroom" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 18.54 7.37-5.74L21 14.07l-9 7-9-7 1.62-1.26zM12 16 3 9l9-7 9 7zm0-11.47L6.26 9 12 13.47 17.74 9z"/></svg>
@@ -449,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../index.md" class="md-nav__link">
+      <a href="../index.md" class="md-nav__link">
         
   
   
@@ -542,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../quickstart.md" class="md-nav__link">
+      <a href="../quickstart.md" class="md-nav__link">
         
   
   
@@ -570,7 +570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started.md" class="md-nav__link">
+      <a href="../getting-started.md" class="md-nav__link">
         
   
   
@@ -598,7 +598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docker-install.md" class="md-nav__link">
+      <a href="../docker-install.md" class="md-nav__link">
         
   
   
@@ -626,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../persistent-installs.md" class="md-nav__link">
+      <a href="../persistent-installs.md" class="md-nav__link">
         
   
   
@@ -654,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configuration.md" class="md-nav__link">
+      <a href="../configuration.md" class="md-nav__link">
         
   
   
@@ -759,7 +759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../proxy.md" class="md-nav__link">
+      <a href="../proxy.md" class="md-nav__link">
         
   
   
@@ -787,7 +787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../compression.md" class="md-nav__link">
+      <a href="../compression.md" class="md-nav__link">
         
   
   
@@ -815,7 +815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ccr.md" class="md-nav__link">
+      <a href="../ccr.md" class="md-nav__link">
         
   
   
@@ -843,7 +843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../image-compression.md" class="md-nav__link">
+      <a href="../image-compression.md" class="md-nav__link">
         
   
   
@@ -871,7 +871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../memory.md" class="md-nav__link">
+      <a href="../memory.md" class="md-nav__link">
         
   
   
@@ -899,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../shared-context.md" class="md-nav__link">
+      <a href="../shared-context.md" class="md-nav__link">
         
   
   
@@ -927,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../learn.md" class="md-nav__link">
+      <a href="../learn.md" class="md-nav__link">
         
   
   
@@ -1028,7 +1028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../integration-guide.md" class="md-nav__link">
+      <a href="../integration-guide.md" class="md-nav__link">
         
   
   
@@ -1056,7 +1056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../langchain.md" class="md-nav__link">
+      <a href="../langchain.md" class="md-nav__link">
         
   
   
@@ -1084,7 +1084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agno.md" class="md-nav__link">
+      <a href="../agno.md" class="md-nav__link">
         
   
   
@@ -1112,7 +1112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../strands.md" class="md-nav__link">
+      <a href="../strands.md" class="md-nav__link">
         
   
   
@@ -1140,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mcp.md" class="md-nav__link">
+      <a href="../mcp.md" class="md-nav__link">
         
   
   
@@ -1239,7 +1239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ARCHITECTURE.md" class="md-nav__link">
+      <a href="../ARCHITECTURE.md" class="md-nav__link">
         
   
   
@@ -1267,7 +1267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../transforms.md" class="md-nav__link">
+      <a href="../transforms.md" class="md-nav__link">
         
   
   
@@ -1295,7 +1295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../text-compression.md" class="md-nav__link">
+      <a href="../text-compression.md" class="md-nav__link">
         
   
   
@@ -1323,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llmlingua.md" class="md-nav__link">
+      <a href="../llmlingua.md" class="md-nav__link">
         
   
   
@@ -1420,7 +1420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../benchmarks.md" class="md-nav__link">
+      <a href="../benchmarks.md" class="md-nav__link">
         
   
   
@@ -1448,7 +1448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LATENCY_BENCHMARKS.md" class="md-nav__link">
+      <a href="../LATENCY_BENCHMARKS.md" class="md-nav__link">
         
   
   
@@ -1476,7 +1476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LIMITATIONS.md" class="md-nav__link">
+      <a href="../LIMITATIONS.md" class="md-nav__link">
         
   
   
@@ -1579,7 +1579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cli.md" class="md-nav__link">
+      <a href="../cli.md" class="md-nav__link">
         
   
   
@@ -1607,7 +1607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api.md" class="md-nav__link">
+      <a href="../api.md" class="md-nav__link">
         
   
   
@@ -1635,7 +1635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sdk.md" class="md-nav__link">
+      <a href="../sdk.md" class="md-nav__link">
         
   
   
@@ -1663,7 +1663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../metrics.md" class="md-nav__link">
+      <a href="../metrics.md" class="md-nav__link">
         
   
   
@@ -1691,7 +1691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../errors.md" class="md-nav__link">
+      <a href="../errors.md" class="md-nav__link">
         
   
   
@@ -1719,7 +1719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting.md" class="md-nav__link">
+      <a href="../troubleshooting.md" class="md-nav__link">
         
   
   
@@ -1812,7 +1812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../macos-deployment.md" class="md-nav__link">
+      <a href="../macos-deployment.md" class="md-nav__link">
         
   
   
@@ -1867,22 +1867,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#failure-modes" class="md-nav__link">
+  <a href="#tldr" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Failure Modes
+        TL;DR
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Failure Modes">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proxy-side-rtk-was-considered-and-rejected" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proxy-side RTK was considered and rejected
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Proxy-side RTK was considered and rejected">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#proxy-failures" class="md-nav__link">
+  <a href="#1-cache-hot-zone-risk" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Proxy Failures
+        1. Cache hot zone risk
       
     </span>
   </a>
@@ -1890,10 +1912,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#compression-failures" class="md-nav__link">
+  <a href="#2-parallel-implementation-with-log_compressorrs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Compression Failures
+        2. Parallel implementation with log_compressor.rs
       
     </span>
   </a>
@@ -1901,10 +1923,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#storage-failures" class="md-nav__link">
+  <a href="#3-command-rewrite-vs-output-rewrite-different-value-propositions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Storage Failures
+        3. Command-rewrite vs output-rewrite — different value propositions
       
     </span>
   </a>
@@ -1917,177 +1939,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#backup-strategies" class="md-nav__link">
+  <a href="#what-the-proxy-does-provide" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Backup Strategies
+        What the proxy does provide
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Backup Strategies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#manual-backup" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Manual Backup
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#automated-backup" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Automated Backup
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#external-storage" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        External Storage
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#recovery-procedures" class="md-nav__link">
+  <a href="#what-the-wrap-cli-does" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Recovery Procedures
+        What the wrap CLI does
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Recovery Procedures">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#proxy-recovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Proxy Recovery
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#database-recovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Database Recovery
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-migration" class="md-nav__link">
+  <a href="#re-litigation-policy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Migration
+        Re-litigation policy
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Data Migration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-migration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schema Migration
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-exportimport" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data Export/Import
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#high-availability" class="md-nav__link">
+  <a href="#references" class="md-nav__link">
     <span class="md-ellipsis">
       
-        High Availability
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="High Availability">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#active-active" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Active-Active
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#health-check-failover" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Health Check Failover
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#version-history" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Version History
+        References
       
     </span>
   </a>
@@ -2114,206 +2002,106 @@
   
 
 
-<h1 id="013-disaster-recovery">013. Disaster Recovery<a class="headerlink" href="#013-disaster-recovery" title="Permanent link">&para;</a></h1>
-<p><strong>Status:</strong> done</p>
-<h2 id="failure-modes">Failure Modes<a class="headerlink" href="#failure-modes" title="Permanent link">&para;</a></h2>
-<h3 id="proxy-failures">Proxy Failures<a class="headerlink" href="#proxy-failures" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Failure</th>
-<th>Impact</th>
-<th>Recovery</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Proxy crash</td>
-<td>Service unavailable</td>
-<td>Restart or failover</td>
-</tr>
-<tr>
-<td>OOM</td>
-<td>Service unavailable</td>
-<td>Restart with more memory</td>
-</tr>
-<tr>
-<td>Network partition</td>
-<td>Cannot reach providers</td>
-<td>Retry with backoff</td>
-</tr>
-</tbody>
-</table>
-<h3 id="compression-failures">Compression Failures<a class="headerlink" href="#compression-failures" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Failure</th>
-<th>Impact</th>
-<th>Recovery</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Compression timeout</td>
-<td>Request delayed</td>
-<td>Retry with passthrough</td>
-</tr>
-<tr>
-<td>Transform error</td>
-<td>Compression skipped</td>
-<td>Log error, passthrough</td>
-</tr>
-<tr>
-<td>Budget exceeded</td>
-<td>Truncation</td>
-<td>Notify via headers</td>
-</tr>
-</tbody>
-</table>
-<h3 id="storage-failures">Storage Failures<a class="headerlink" href="#storage-failures" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Failure</th>
-<th>Impact</th>
-<th>Recovery</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SQLite corruption</td>
-<td>Data loss</td>
-<td>Restore from backup</td>
-</tr>
-<tr>
-<td>Cache full</td>
-<td>CCR disabled</td>
-<td>Clear old entries</td>
-</tr>
-<tr>
-<td>Disk full</td>
-<td>Write failures</td>
-<td>Expand storage</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="backup-strategies">Backup Strategies<a class="headerlink" href="#backup-strategies" title="Permanent link">&para;</a></h2>
-<h3 id="manual-backup">Manual Backup<a class="headerlink" href="#manual-backup" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Full backup</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>tar<span class="w"> </span>-czf<span class="w"> </span>headroom-backup-<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d<span class="k">)</span>.tar.gz<span class="w"> </span>~/.headroom/
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Incremental (last 24h)</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>sqlite3<span class="w"> </span>~/.headroom/headroom_memory.db<span class="w"> </span><span class="s2">&quot;.backup /tmp/headroom_incremental.db&quot;</span>
-</span></code></pre></div>
-<h3 id="automated-backup">Automated Backup<a class="headerlink" href="#automated-backup" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Cron job (daily at 2am)</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="m">0</span><span class="w"> </span><span class="m">2</span><span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>tar<span class="w"> </span>-czf<span class="w"> </span>/backup/headroom-<span class="k">$(</span>date<span class="w"> </span>+<span class="se">\%</span>Y<span class="se">\%</span>m<span class="se">\%</span>d<span class="k">)</span>.tar.gz<span class="w"> </span>~/.headroom/
-</span></code></pre></div>
-<h3 id="external-storage">External Storage<a class="headerlink" href="#external-storage" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p><strong>Note:</strong> External PostgreSQL/Redis storage is not yet implemented. Headroom uses SQLite at <code>~/.headroom/</code> (configurable via <code>HEADROOM_WORKSPACE_DIR</code>). The <code>HEADROOM_DB_URL</code> and <code>HEADROOM_CACHE_BACKEND</code> vars do not exist.</p>
-</blockquote>
-<hr />
-<h2 id="recovery-procedures">Recovery Procedures<a class="headerlink" href="#recovery-procedures" title="Permanent link">&para;</a></h2>
-<h3 id="proxy-recovery">Proxy Recovery<a class="headerlink" href="#proxy-recovery" title="Permanent link">&para;</a></h3>
+<h1 id="rtk-architecture-why-wrap-cli-only">RTK architecture — why wrap-CLI only<a class="headerlink" href="#rtk-architecture-why-wrap-cli-only" title="Permanent link">&para;</a></h1>
+<p><strong>Status:</strong> decided. Locked at Phase G PR-G3 (2026-05).
+<strong>Owner:</strong> Headroom realignment.</p>
+<h2 id="tldr">TL;DR<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
+<p><strong>RTK is a wrap-CLI hook, not a proxy-side compressor.</strong> The Headroom
+proxy does NOT invoke RTK on tool-result content. Future contributors
+who consider moving RTK into the proxy hot path: read this doc first.</p>
+<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
+<p>RTK (Realtime Token Kompress) rewrites shell <strong>commands</strong> at exec
+time so that a <code>git diff</code> or <code>grep</code> invocation emits a more
+compressed output before the agent ever ingests it. RTK runs in the
+wrap-CLI tail — <code>headroom wrap claude</code>, <code>headroom wrap codex</code>, etc.
+— where it installs a <code>~/.rtk/bin/rtk</code> shim ahead of the agent CLI
+and intercepts shelled-out subprocesses.</p>
+<p>It surfaces value in two places:
+1. <strong>Tokens saved per invocation</strong> — measured by <code>rtk gain --format json</code>.
+2. <strong>Tokens saved per session</strong> — aggregated at wrap-session end.</p>
+<p>Both signals feed <code>wrap_rtk_invocations_total</code> and
+<code>wrap_rtk_tokens_saved_per_session</code> (registered by the Rust proxy's
+observability surface so a single <code>/metrics</code> scrape exposes the full
+picture).</p>
+<h2 id="proxy-side-rtk-was-considered-and-rejected">Proxy-side RTK was considered and rejected<a class="headerlink" href="#proxy-side-rtk-was-considered-and-rejected" title="Permanent link">&para;</a></h2>
+<p>At Phase G scoping, three reviewers floated the idea of invoking
+RTK on the <strong>proxy</strong> side: when a <code>tool_result</code> block flows
+upstream, dispatch it through RTK to shrink the content before it
+hits the model.</p>
+<p><strong>Decision: rejected.</strong> Three load-bearing reasons.</p>
+<h3 id="1-cache-hot-zone-risk">1. Cache hot zone risk<a class="headerlink" href="#1-cache-hot-zone-risk" title="Permanent link">&para;</a></h3>
+<p>The proxy's Phase B cache-safety contract pins <code>tool_result</code>
+content as part of the cache hot zone. Compression there bursts
+the prompt cache because the rewritten bytes diverge from the
+canonical wire bytes the upstream cached. Phase B PR-B2 → PR-B7
+spent ~3000 LOC carving the live-zone-only surface specifically
+to prevent this class of cache-invalidation. Inserting RTK
+proxy-side would re-introduce it.</p>
+<h3 id="2-parallel-implementation-with-log_compressorrs">2. Parallel implementation with <code>log_compressor.rs</code><a class="headerlink" href="#2-parallel-implementation-with-log_compressorrs" title="Permanent link">&para;</a></h3>
+<p>The Rust proxy already has a <code>crates/headroom-core/src/transforms/log_compressor.rs</code>
+that compresses <strong>tool output text</strong> in the live zone. It uses the
+same heuristics RTK uses (whitespace de-dup, line de-dup,
+file-listing collapse) but invoked at the proxy's per-block
+dispatcher rather than at the shell exec boundary. Adding RTK
+proxy-side would mean two implementations of the same compression
+in the same hot path; "no silent fallbacks, no parallel impls" is
+explicit project policy.</p>
+<h3 id="3-command-rewrite-vs-output-rewrite-different-value-propositions">3. Command-rewrite vs output-rewrite — different value propositions<a class="headerlink" href="#3-command-rewrite-vs-output-rewrite-different-value-propositions" title="Permanent link">&para;</a></h3>
+<p>RTK rewrites <strong>commands</strong> before they execute. The
+<code>git log --oneline</code> you typed becomes <code>git log --oneline -n 50</code>
+because RTK has learned that the first 50 commits are usually
+enough context. That's a fundamentally different mechanism from
+compressing the <strong>output</strong> of an unmodified command. A proxy-side
+invocation would skip the command-rewrite half — the half that
+generates the largest savings on heavy shell workloads — and only
+catch the output side, which is already covered by
+<code>log_compressor</code> and <code>code_compressor</code>.</p>
+<h2 id="what-the-proxy-does-provide">What the proxy does provide<a class="headerlink" href="#what-the-proxy-does-provide" title="Permanent link">&para;</a></h2>
+<p>Per Phase G PR-G3, the proxy exposes RTK-derived metrics via its
+registry:</p>
+<ul>
+<li><code>wrap_rtk_invocations_total{tool}</code> — driven by the wrap-CLI
+  polling <code>rtk gain --format json</code> and incrementing the registered
+  counter by the delta since last poll.</li>
+<li><code>wrap_rtk_tokens_saved_per_session</code> — emitted at wrap-session
+  close.</li>
+</ul>
+<p>This keeps the operator dashboard single-pane-of-glass without
+re-implementing RTK inside the proxy.</p>
+<h2 id="what-the-wrap-cli-does">What the wrap CLI does<a class="headerlink" href="#what-the-wrap-cli-does" title="Permanent link">&para;</a></h2>
+<p>Every <code>headroom wrap &lt;agent&gt;</code> subcommand:</p>
 <ol>
-<li>
-<p><strong>Restart proxy:</strong>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Docker</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>docker-compose<span class="w"> </span>restart<span class="w"> </span>headroom
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Native</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>pkill<span class="w"> </span>headroom<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>headroom<span class="w"> </span>proxy<span class="w"> </span><span class="p">&amp;</span>
-</span></code></pre></div></p>
-</li>
-<li>
-<p><strong>Check health:</strong>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>curl<span class="w"> </span>http://localhost:8787/health
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>curl<span class="w"> </span>http://localhost:8787/readyz
-</span></code></pre></div></p>
-</li>
+<li>Ensures the RTK binary is installed via <code>_ensure_rtk_binary()</code>.</li>
+<li>Injects the <code>&lt;!-- headroom:rtk-instructions --&gt;</code> block into the
+   agent's instruction file (e.g. <code>AGENTS.md</code>, <code>.cursorrules</code>).</li>
+<li>Spawns the proxy and the agent CLI side-by-side.</li>
+<li>Polls <code>rtk gain --format json</code> on a 5-second memoization window
+   and feeds the delta into the proxy's metric registry.</li>
 </ol>
-<h3 id="database-recovery">Database Recovery<a class="headerlink" href="#database-recovery" title="Permanent link">&para;</a></h3>
+<p>See <code>headroom/cli/wrap/</code> for the per-agent shims.</p>
+<h2 id="re-litigation-policy">Re-litigation policy<a class="headerlink" href="#re-litigation-policy" title="Permanent link">&para;</a></h2>
+<p>A change to this architecture should:</p>
 <ol>
-<li>
-<p><strong>Restore from backup:</strong>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Stop headroom</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>pkill<span class="w"> </span>headroom
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Restore SQLite</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>rm<span class="w"> </span>~/.headroom/headroom_memory.db
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>tar<span class="w"> </span>-xzf<span class="w"> </span>headroom-backup-20260416.tar.gz<span class="w"> </span>-C<span class="w"> </span>~/
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1"># Restart headroom</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>headroom<span class="w"> </span>proxy<span class="w"> </span><span class="p">&amp;</span>
-</span></code></pre></div></p>
-</li>
-<li>
-<p><strong>Verify data:</strong>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>curl<span class="w"> </span>http://localhost:8787/stats
-</span></code></pre></div></p>
-</li>
+<li>Quote the live-zone-only contract from
+   <code>REALIGNMENT/04-phase-B-live-zone.md</code> and explain why the
+   cache-burst risk is acceptable.</li>
+<li>Show measurements (not estimates) that proxy-side RTK adds value
+   beyond <code>log_compressor.rs</code> on real production traffic.</li>
+<li>Have an exit ramp: a CLI flag to disable proxy-side RTK without
+   reverting the wrap-CLI integration.</li>
 </ol>
-<hr />
-<h2 id="data-migration">Data Migration<a class="headerlink" href="#data-migration" title="Permanent link">&para;</a></h2>
-<h3 id="schema-migration">Schema Migration<a class="headerlink" href="#schema-migration" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">migrate_v1_to_v2</span><span class="p">():</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="k">async</span> <span class="k">with</span> <span class="n">aiosqlite</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span> <span class="k">as</span> <span class="n">db</span><span class="p">:</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>        <span class="k">await</span> <span class="n">db</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="s2">            ALTER TABLE sessions</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="s2">            ADD COLUMN agent_version TEXT</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="s2">        &quot;&quot;&quot;</span><span class="p">)</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>        <span class="k">await</span> <span class="n">db</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
-</span></code></pre></div>
-<h3 id="data-exportimport">Data Export/Import<a class="headerlink" href="#data-exportimport" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Export</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>curl<span class="w"> </span>http://localhost:8787/api/v1/export<span class="w"> </span>&gt;<span class="w"> </span>backup.json
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># Import</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:8787/api/v1/import<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">  </span>-d<span class="w"> </span>@backup.json
-</span></code></pre></div>
-<hr />
-<h2 id="high-availability">High Availability<a class="headerlink" href="#high-availability" title="Permanent link">&para;</a></h2>
-<h3 id="active-active">Active-Active<a class="headerlink" href="#active-active" title="Permanent link">&para;</a></h3>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nt">services</span><span class="p">:</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nt">headroom-1</span><span class="p">:</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">headroom-ai/headroom:latest</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;8787:8787&quot;</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span><span class="nt">headroom-2</span><span class="p">:</span>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">headroom-ai/headroom:latest</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
-</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;8788:8787&quot;</span>
-</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
-</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">  </span><span class="nt">redis</span><span class="p">:</span>
-</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">redis:latest</span>
-</span></code></pre></div>
-<h3 id="health-check-failover">Health Check Failover<a class="headerlink" href="#health-check-failover" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>curl<span class="w"> </span>http://primary:8787/health<span class="w"> </span><span class="o">||</span><span class="w"> </span>curl<span class="w"> </span>http://backup:8787/health
-</span></code></pre></div>
-<hr />
-<h2 id="version-history">Version History<a class="headerlink" href="#version-history" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Version</th>
-<th>Date</th>
-<th>Changes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.0.0-draft</td>
-<td>2026-04-16</td>
-<td>Initial disaster recovery document</td>
-</tr>
-</tbody>
-</table>
+<p>Without all three, treat the proposal as a regression and link this
+doc.</p>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>REALIGNMENT/09-phase-G-rtk-observability.md</code> — Phase G plan.</li>
+<li><code>REALIGNMENT/04-phase-B-live-zone.md</code> — cache hot-zone contract.</li>
+<li><code>headroom/cli/wrap/</code> — wrap-CLI implementation.</li>
+<li><code>crates/headroom-core/src/transforms/log_compressor.rs</code> — the
+  proxy-side log compressor RTK would parallel.</li>
+<li>2026-05-01 user direction message archived in
+  <code>project_compression_realignment_2026_05</code> memory note.</li>
+</ul>
 
 
 
@@ -2406,10 +2194,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.annotate", "content.tabs.link", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "search.highlight", "search.suggest", "search.share", "toc.follow", "header.autohide"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.code.annotate", "content.tabs.link", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "search.highlight", "search.suggest", "search.share", "toc.follow", "header.autohide"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
